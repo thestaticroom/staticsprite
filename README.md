@@ -1,0 +1,2 @@
+# staticsprite
+A digital companion
