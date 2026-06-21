@@ -20,8 +20,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 
 def load_sprite(filename):
     # Build the full path: script_folder/filename
-    filepath = os.path.join(SCRIPT_DIR, filename)
-    try:
+    filepath = os.path.join(SCRIPT_DIR, "assets", filename)    try:
         return pygame.image.load(filepath).convert_alpha()
     except pygame.error:
         print(f"Warning: {filename} not found at {filepath}")
